@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Planet Granite - Using Granite</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="root-styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="page-content-layout">
+
+  <!-- STARFIELD BACKGROUND -->
+  <canvas id="starfield"></canvas>
+
+
+  <!-- HERO -->
+
+  <header class="page-header">
+    <img class="page-planet" src="assets/planetgranite.gif" alt="">
+    <h1>Using Granite</h1>
+  </header>
+
+
+
+
+  <!-- MAIN CONTENT -->
+  <main class="page-content">
+
+    <section class="text-block">
+      <h2>Project Overview</h2>
+      <p>
+        The concept behind our project was to create a space-themed game experience alongside an interactive development blog inspired by exploration and progression through space. The overall idea focused on combining creative game design with immersive web development to produce something that felt visually engaging while also documenting the full design journey of the project. Drawing inspiration from classic space games and futuristic sci-fi aesthetics, the team aimed to create a cohesive experience where both the game and the blog shared the same visual identity and theme.
+      </p>
+    </section>
+
+    <section class="text-block">
+
+      <h2>Ryan's post</h2>
+
+      <h2>Prompting Granite</h2>
+      <p>
+        Granite is a family of large language models created by IBM. Through using Granite AI over the past few months,
+        I have learned best practices on how to interact with Granite to get the best possible results.
+      </p>
+      <h2>Roleplay</h2>
+      <p>
+        Roleplay helps to give Granite a framework to build from by providing a blurb at the start of the prompt that
+        asks the AI to take on the personality, characteristics, or patterns of its assigned role. For example, a
+        specific roleplay is "You are a Unity 6 expert and a senior C# programmer." Providing the role to Granite allows
+        it to understand the context it is working within. Once Granite knows it is making C# scripts for Unity, then it
+        knows to use Unity using statements for the start of C# scripts.
+      </p>
+
+
+      <img src="assets/ryan1.jpeg" alt="Photo of giving a role to Granite" class="blog-image">
+    </section>
+
+    <section class="text-block">
+      <h2> Modes</h2>
+      <p>
+        Granite has a web version called Granite Playground. Granite Playground has three different modes: default,
+        search, and research. These modes drastically change the result that the AI provides because of how Granite
+        produces information differently. To demonstrate the differences, Granite was put through an experiment. In the
+        experiment, Granite was asked the same question in different modes, "Is Unity 6 Out?". Default mode answered,
+        "As of my latest update in April 2023, Unity 6 has not been released." This means that the data that the default
+        mode model is trained on only covers data before April 2023. Newer software and, specifically, programming rules
+        for Unity would not be reflected accurately in generated responses. Next, search mode responded, "Yes, Unity 6
+        is out." Search mode, as the name describes, searches the internet, meaning it will have access to information
+        as recent as today. Lastly, research mode's answer was in the form of a long research paper, looking at
+        different aspects of Unity 6, comparing the different versions and features, with the eventual answer of Unity 6
+        being out. Learning the differences between these three different modes helps users use the correct mode for
+        what they are trying to accomplish.
+      </p>
+
+      <img src="assets/ryan2.jpeg" alt="Photos of chat responses" class="blog-image">
+
+      <p>Using Research for Context</p>
+      <p>Learning to use Granite Playground in default mode to produce scripts leads to outdated and incorrect
+        information, due to it being trained on older data. Using the research mode gets around this outdated and
+        incorrect information. A prompt like "You are a Unity 6 expert, research how best to implement this feature,"
+        then describing the feature, gives better script generations, although sometimes it would leave out an import
+        line, or not connect correctly to another script due to its short context window. Research provides up-to-date
+        information on Unity 6, allowing it to be an actual "Unity expert" and providing a large amount of context.
+        Users can only enter eight thousand, but the research papers Granite produces can average eight thousand, three
+        hundred and ten characters in length. These research papers produce a great chunk of context for it to
+        understand the task. The specialized context is perfect because Granite will generate its own questions to
+        research, and they are solid, in-depth questions. These questions create optimal context better and, in less
+        time, than a person.</p>
+
+
+      <img src="assets/ryan3.jpeg" alt="Photo of character limit in chat" class="blog-image">
+
+      <img src="assets/ryan10.jpeg" alt="Image of start of research paper" class="blog-image">
+
+    </section>
+
+    
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <a class="toTop" href="#toTop">↑ Back to Top</a>
+
+      <h2>Planet Granite</h2>
+
+      <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="introduction.html">Introduction</a>
+        <a href="game-development.html">Game Development</a>
+        <a href="blog-development.html">Blog Development</a>
+        <a href="using-granite.html">Using Granite</a>
+        <a href="resources-assets.html">Resources & Assets</a>
+        <a href="testing-feedback.html">Testing & Feedback</a>
+        <a href="reflections-references.html">Reflections & References</a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- STATIC BACKGROUND SCRIPT -->
+  <script src="starfield-static.js"></script>
+
+</body>
+
+</html>
