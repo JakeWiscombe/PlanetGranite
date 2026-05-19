@@ -35,17 +35,23 @@
   <!-- MAIN CONTENT -->
   <main class="page-content">
 
-    
+
     <section class="text-block">
 
-      <h2>Ildi's post</h2>
+      <h2>Blog team</h2>
 
       <p>
-        The blog was designed collaboratively by myself and Jake, with the aim of creating an immersive space-themed experience that reflected the atmosphere of the game. Instead of using a traditional navigation menu, we developed an interactive system where planets acted as navigation elements within a stylised universe background. This approach encouraged users to explore the website visually while maintaining a clean and modern design.
-      </p>
+        The blog was developed collaboratively as an immersive space-themed experience designed to reflect the visual
+        identity and atmosphere of the game. Instead of a traditional navigation system, we created an interactive
+        layout where planets functioned as navigation points within a stylised universe background. This encouraged
+        users to explore the site in a more visual and exploratory way, while still maintaining a clean, structured, and
+        modern design.
 
       <p>
-        During the design and development process, I used Granite Playground and found it particularly useful for generating ideas on how to achieve specific visual styles and effects. The coding of the blog was completed collaboratively by Jake and myself, while Granite Playground and other LLM tools were used to assist with vibe coding, experimentation, troubleshooting, and visual design ideas. 
+        Throughout development, Granite Playground and other LLM tools were used to support idea generation,
+        experimentation, troubleshooting, and visual design decisions. The workload was shared across the team, with
+        different members focusing on layout design, content pages, animation systems, and interactive elements to
+        ensure consistent progress and a unified final product.
       </p>
 
       <img src="assets/Ideas by Granite for background.png" alt="Alien sprite sheet" class="blog-image">
@@ -53,53 +59,29 @@
       <img src="assets/Vibe coding with Granite .png" alt="Vibe coding with Granite" class="blog-image">
 
       <p>
-        We worked effectively as a team by regularly sharing project files and independently developing different areas of the website. After receiving the initial layout structure, I focused primarily on designing and developing the animated background system, which required many iterations, prompt refinements, and experimentation to achieve the final visual style.
+        A major technical focus was the animated background system, built using the HTML5 canvas element and JavaScript
+        Canvas 2D API. This system used multiple procedural layers including stars, dust particles, and nebula clouds.
+        Depth effects, gradient lighting, and blending techniques were applied to create a more atmospheric and
+        immersive visual environment. Performance was carefully considered throughout development, with optimisation
+        techniques such as particle recycling, simplified calculations, and requestAnimationFrame() used to maintain
+        smooth rendering across devices.
       </p>
 
       <p>
-        The animated background was created using the HTML5 canvas element and the JavaScript Canvas 2D API. The system consisted of multiple procedural layers including stars, dust particles, and nebula clouds, each generated using JavaScript arrays containing properties such as position, opacity, size, and movement speed. Depth effects, gradient lighting, and additive blending techniques were used to create a more atmospheric and realistic environment.
-      </p>
-
-      <p>
-        The animation loop was controlled using requestAnimationFrame() to ensure smooth rendering and improved performance. Optimisation techniques such as particle recycling, lightweight calculations, and canvas-based rendering were implemented throughout development to maintain responsiveness across devices.
-      </p>
-
-      <p>
-        I was also responsible for designing the individual content pages of the blog. These pages retained the overall space aesthetic while simplifying the animation with static stars to improve readability and reduce visual distraction.
-      </p>
-
-      
-    </section>
-
-    <!-- BLOG DEVELOPMENT -->
-    <section class="text-block">
-
-      <h2>Blog Development</h2>
-
-      <h2>Jake's post</h2>
-
-
-
-      <p>
-        During the development of the Planet Granite blog, a major part of my contribution was the designing and
-        planning of the blog, as well as focusing on debugging and refining interactive elements of the website,
-        particularly the rocket animation that travels between the planets. The intended effect was for the rocket to
-        follow the curved SVG path smoothly as the user scrolled through the page. However, during testing, the rocket
-        didn’t start or end in the correct position and rotated incorrectly – breaking the immersion of the experience
-        and made the navigation feel broke and inconsistent.
-
+        Another key feature was the rocket navigation system, which was designed to follow curved SVG paths as users
+        scrolled through the page. During testing, issues with incorrect positioning and rotation caused the movement to
+        feel inconsistent and broke immersion. To resolve this, the JavaScript logic and SVG path structure were
+        refined, and multiple approaches using path length and scroll-based calculations were tested until the rocket
+        movement aligned more accurately with the curve.
       </p>
 
       <img src="assets/blog2.png" alt="Rocket issue" class="blog-image">
 
       <p>
-        To resolve this issue, the JavaScript controlling the animation was completely reworked, alongside refining the
-        SVG path itself to allow a smooth aesthetic when scrolling. I experimented with different methods of calculating
-        the rocket’s position using path length and scroll percentages, eventually improving the accuracy of the
-        movement so the rocket aligned more naturally with the curve.
+        In addition, individual content pages were designed to preserve the overall space aesthetic while reducing
+        background animation complexity. This helped improve readability and reduced visual distraction, ensuring the
+        focus remained on the written content while still maintaining the immersive theme of the blog.
       </p>
-
-
 
       <img src="assets/blog1.png" alt="Rocket fixed" class="blog-image">
 
@@ -111,7 +93,7 @@
 
     </section>
 
-    
+
   </main>
 
 

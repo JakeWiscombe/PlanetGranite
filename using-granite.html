@@ -35,29 +35,22 @@
   <!-- MAIN CONTENT -->
   <main class="page-content">
 
-    <section class="text-block">
-      <h2>Project Overview</h2>
-      <p>
-        The concept behind our project was to create a space-themed game experience alongside an interactive development blog inspired by exploration and progression through space. The overall idea focused on combining creative game design with immersive web development to produce something that felt visually engaging while also documenting the full design journey of the project. Drawing inspiration from classic space games and futuristic sci-fi aesthetics, the team aimed to create a cohesive experience where both the game and the blog shared the same visual identity and theme.
-      </p>
-    </section>
+    
 
     <section class="text-block">
 
-      <h2>Ryan's post</h2>
+      <h2>Game development team</h2>
 
       <h2>Prompting Granite</h2>
       <p>
-        Granite is a family of large language models created by IBM. Through using Granite AI over the past few months,
-        I have learned best practices on how to interact with Granite to get the best possible results.
+        Granite is a family of large language models created by IBM. Through using it over time, I developed an
+        understanding of how to prompt it effectively.
       </p>
       <h2>Roleplay</h2>
       <p>
-        Roleplay helps to give Granite a framework to build from by providing a blurb at the start of the prompt that
-        asks the AI to take on the personality, characteristics, or patterns of its assigned role. For example, a
-        specific roleplay is "You are a Unity 6 expert and a senior C# programmer." Providing the role to Granite allows
-        it to understand the context it is working within. Once Granite knows it is making C# scripts for Unity, then it
-        knows to use Unity using statements for the start of C# scripts.
+        Roleplay improves results by giving Granite a clear context and identity, such as “You are a Unity 6 expert and
+        senior C# developer.” This helps it generate more relevant and correctly structured code, including appropriate
+        Unity conventions.
       </p>
 
 
@@ -67,34 +60,20 @@
     <section class="text-block">
       <h2> Modes</h2>
       <p>
-        Granite has a web version called Granite Playground. Granite Playground has three different modes: default,
-        search, and research. These modes drastically change the result that the AI provides because of how Granite
-        produces information differently. To demonstrate the differences, Granite was put through an experiment. In the
-        experiment, Granite was asked the same question in different modes, "Is Unity 6 Out?". Default mode answered,
-        "As of my latest update in April 2023, Unity 6 has not been released." This means that the data that the default
-        mode model is trained on only covers data before April 2023. Newer software and, specifically, programming rules
-        for Unity would not be reflected accurately in generated responses. Next, search mode responded, "Yes, Unity 6
-        is out." Search mode, as the name describes, searches the internet, meaning it will have access to information
-        as recent as today. Lastly, research mode's answer was in the form of a long research paper, looking at
-        different aspects of Unity 6, comparing the different versions and features, with the eventual answer of Unity 6
-        being out. Learning the differences between these three different modes helps users use the correct mode for
-        what they are trying to accomplish.
+        Granite Playground has three modes: default, search, and research. These produce very different outputs. In
+        testing with the same question (“Is Unity 6 out?”), default mode used outdated training data, search mode pulled
+        current web information, and research mode produced a detailed analysis comparing versions and confirming the
+        answer. Understanding these modes is key to choosing the right tool for the task.
       </p>
 
       <img src="assets/ryan2.jpeg" alt="Photos of chat responses" class="blog-image">
 
       <p>Using Research for Context</p>
-      <p>Learning to use Granite Playground in default mode to produce scripts leads to outdated and incorrect
-        information, due to it being trained on older data. Using the research mode gets around this outdated and
-        incorrect information. A prompt like "You are a Unity 6 expert, research how best to implement this feature,"
-        then describing the feature, gives better script generations, although sometimes it would leave out an import
-        line, or not connect correctly to another script due to its short context window. Research provides up-to-date
-        information on Unity 6, allowing it to be an actual "Unity expert" and providing a large amount of context.
-        Users can only enter eight thousand, but the research papers Granite produces can average eight thousand, three
-        hundred and ten characters in length. These research papers produce a great chunk of context for it to
-        understand the task. The specialized context is perfect because Granite will generate its own questions to
-        research, and they are solid, in-depth questions. These questions create optimal context better and, in less
-        time, than a person.</p>
+      <p>Default mode can produce outdated or incomplete Unity scripts, while research mode improves accuracy by
+        generating up-to-date, structured context. Prompts like “research how to implement this feature” provide
+        detailed background information that improves outputs, although occasional issues like missing imports can still
+        occur due to context limits. Research mode is particularly effective because it generates its own focused
+        questions, producing dense, relevant context that is often more efficient than manual research.</p>
 
 
       <img src="assets/ryan3.jpeg" alt="Photo of character limit in chat" class="blog-image">
@@ -103,7 +82,7 @@
 
     </section>
 
-    
+
   </main>
 
 
