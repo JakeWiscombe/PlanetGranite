@@ -36,29 +36,31 @@
   <main class="page-content">
 
     <section class="text-block">
-      <h2>Project Overview</h2>
+      <h2>Game: Testing & Feedback</h2>
       <p>
-        The aim of this project was to explore how IBM’s Granite LLM could be used within the development of a
-        space-themed game and accompanying collection of mini-game experiments. The brief encouraged experimentation
-        with Granite both as a development tool and as a potential in-game component, allowing teams to creatively
-        integrate AI into different areas of the project. </p>
-      <p>Our team chose to focus on using Granite primarily as a development tool to support idea generation, coding
-        support, debugging and problem-solving throughout the design and development process.</p>
+        Across the project, we have been testing our game alongside development to ensure that everything works well. During our showcase in class, we recieved feedback from our peers and instructors, which we will use to further improve our game. We are currently working on implementing the feedback we received, and we are excited to see how it will enhance the gameplay experience for our players.
+      </p>
+      <p>
+        During the feedback session we received valuable feedback: we need to integrate Granite more deeply into the gameplay, affecting player's decision-making process, not just as a coding assistant on planets. We came up with several options for the start of the game - for example, requiring a password from Granite to start the spaceship, or asking the player to type “Start the engine”. Other option was to use the Granite to help the player plan the next path between planets.
+      </p>
+    </section>
 
-      <p>The overall concept of our project was heavily inspired by space exploration and progression, which influenced
-        both the game itself and the design of this development blog. Rather than creating a traditional written report,
-        we wanted the blog to feel immersive and interactive while still documenting our full creative journey. To
-        achieve this, we designed the website around a planetary navigation system where users travel through different
-        stages of development using a rocket animation connected by SVG flight paths. This helped reinforce the visual
-        identity of the project while making the documentation process more engaging for creative technology students.
+    <section class="text-block">
+      <h2>Blog: Testing & Feedback</h2>
+      <p>
+        Using some of Ildi's previous work, we implemented a starry background to add to our space theme to make the blog feel more immsersive. However, during testing, we recieved feedback that the background was too busy and the big stars made it very distracting and not realistic. This was changed to reflect on the feedback we had received, and we created a more subtle background with smaller stars that added to the atmosphere without overwhelming the content.
       </p>
 
-      <p>This blog documents the full development journey of the project, including concept development,
-      experimentation, proof-of-concept creation, technical challenges, feedback implementation and final outcomes. It
-      also reflects on how the team adapted to problems encountered throughout development and how collaboration
-      influenced the final result. Overall, the project aimed to demonstrate how AI tools such as Granite can
-      meaningfully support both the creative and technical aspects of game development while encouraging experimentation
-      and innovation within digital design.</p>
+      <img src="assets/star-background.png" alt="star background" class="blog-image">
+
+      <p>
+        We created a rocket animation with the intention of making our blog more visually appealing and engaging for our readers. However, during testing, the rocket didn’t start or end in the correct position and rotated incorrectly – breaking the immersion of the experience and made the navigation feel broke and inconsistent. We received feedback that the rocket should rotate alongside the path, so this is what we done.
+      </p>
+
+      <img src="assets/blog2.png" alt="Rocket issue" class="blog-image">
+
+      <p>
+        To resolve this issue, the JavaScript controlling the animation was completely reworked, alongside refining the SVG path itself to allow a smooth aesthetic when scrolling. We experimented with different methods of calculating the rocket’s position using path length and scroll percentages, eventually improving the accuracy of the movement so the rocket aligned more naturally with the curve.
       </p>
     </section>
 
